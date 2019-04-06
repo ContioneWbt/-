@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CACD8C9-464A-4F3B-855A-90723F6DFDA8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPatternPrinciple</RootNamespace>
+    <AssemblyName>DesignPatternPrinciple</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DIP\AbstractPhone.cs" />
+    <Compile Include="DIP\DIPShow.cs" />
+    <Compile Include="DIP\Oppo.cs" />
+    <Compile Include="DIP\Honor.cs" />
+    <Compile Include="DIP\iPhone.cs" />
+    <Compile Include="DIP\Lumia.cs" />
+    <Compile Include="DIP\Mi.cs" />
+    <Compile Include="DIP\Student.cs" />
+    <Compile Include="ISP\AbstractPhone.cs" />
+    <Compile Include="ISP\Camera.cs" />
+    <Compile Include="ISP\IExtend.cs" />
+    <Compile Include="ISP\OldMan.cs" />
+    <Compile Include="ISP\Honor.cs" />
+    <Compile Include="ISP\iPhone.cs" />
+    <Compile Include="ISP\ISPShow.cs" />
+    <Compile Include="ISP\Lumia.cs" />
+    <Compile Include="ISP\PSP.cs" />
+    <Compile Include="ISP\Student.cs" />
+    <Compile Include="ISP\TV.cs" />
+    <Compile Include="LOD\Class.cs" />
+    <Compile Include="LOD\LODShow.cs" />
+    <Compile Include="LOD\School.cs" />
+    <Compile Include="LOD\Student.cs" />
+    <Compile Include="LSP\LSPShow.cs" />
+    <Compile Include="LSP\People.cs" />
+    <Compile Include="LSP\Poly.cs" />
+    <Compile Include="OCP\OCPShow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SRP\Fish.cs" />
+    <Compile Include="SRP\Chicken.cs" />
+    <Compile Include="SRP\AbstractAnimal.cs" />
+    <Compile Include="SRP\Animal.cs" />
+    <Compile Include="SRP\Client.cs" />
+    <Compile Include="SRP\SRPShow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
